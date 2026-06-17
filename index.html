@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Challenge Dispatch – Issue 02</title>
+<title>Challenge Dispatch – Issue 03</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -21,7 +21,7 @@ body { background:#425B72; font-family:'DM Sans', sans-serif; padding:2rem; }
 .issue-num { font-family:'Space Mono', monospace; font-size:clamp(2.5rem,6vw,5rem); font-weight:700; line-height:1; color:#F5653D; padding-bottom:0.4rem; }
 
 .tagline-bar { background:#304C5F; color:#F8FAFC; padding:0.4rem 2rem; font-family:'Space Mono', monospace; font-size:0.68rem; letter-spacing:0.2em; text-transform:uppercase; display:flex; gap:2rem; flex-wrap:wrap; }
-.tagline-bar span { opacity:0.65; }
+.tagline-bar span { opacity:0.65; font-weight:700; }
 .tagline-bar strong { color:#F5653D; opacity:1; }
 
 .top-intro { border-bottom:1.5px solid #B7CCDC; padding:1.2rem 1.4rem; display:grid; grid-template-columns:2fr 1fr; gap:1.5rem; background:#E9EFF6; }
@@ -96,38 +96,36 @@ p:last-child { margin-bottom:0; }
       <img id="nl-logo" src="data:image/jpeg;base64,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" alt="E-gineering logo" class="masthead-logo" />
       <span id="nl-orgname">E-gineering, Inc. Press &nbsp;·&nbsp; Indy Sports Corp. Corporate Challenge</span>
     </span>
-    <span class="issue-date" id="nl-issuelabel">ISSUE_02 &nbsp;|&nbsp; MAY 2026</span>
+    <span class="issue-date" id="nl-issuelabel">ISSUE_03 &nbsp;|&nbsp; JUN 2026</span>
   </div>
 
   <div class="hero-title-row">
     <div class="hero-title">CHALLENGE<br>DISPATCH</div>
-    <div class="issue-num">02</div>
+    <div class="issue-num">03</div>
   </div>
 
   <div class="tagline-bar">
-    <span>STATUS: <strong id="nl-status">INITIALIZED</strong></span>
+    <span>STATUS: <strong id="nl-status">FINAL_PUSH</strong></span>
     <span>TARGET: <strong id="nl-target">JUNE 26</strong></span>
-    <span>CHALLENGES_ACTIVE: <strong>4</strong></span>
-    <span>DAYS_TO_EVENT: <strong>T–MINUS <span id="nl-tminus">31</span></strong></span>
+    <span>CHALLENGES_ACTIVE: <strong>3</strong></span>
+    <span>DAYS_TO_EVENT: <strong>T–MINUS <span id="nl-tminus">10</span></strong></span>
   </div>
 
   <div class="top-intro">
     <div>
       <div class="sec-label">EXECUTIVE_README.md</div>
-      <div class="sec-title">We Have a Challenge to Compile</div>
-      <p>The Indy Sports Corp. <strong>Corporate Challenge</strong> is well underway — and Team E-gineering is pushing forward! Challenges are active, volunteers are stepping up, and the finish line is <span class="inline-accent">June 26</span>. Think of this newsletter as your live status dashboard, tracking every challenge from <span class="inline-mono">IN_PROGRESS</span> → <span class="inline-mono">COMPLETE</span>.</p>
-      <p>Not registered yet? You can <strong>still sign up</strong> and contribute to the team score — every bit of participation matters. Just note that the deadline to receive a <strong>T-shirt</strong> has passed, but your spot on the team is absolutely still open. Don't be an unhandled exception — jump in!</p>
-      <p><a id="nl-btn-register" href="https://runsignup.com/Race/Register/RaceGroup-1910083?raceId=97007" class="nl-btn" style="background:var(--nl-steel,#507C9B);">→ REGISTER HERE</a></p>
-      <p style="font-size:0.75rem;">When prompted for a team, search <strong>E-gineering</strong> and enter the team password: <code style="background:var(--nl-header-bg,#304C5F);color:#B7CCDC;padding:0.1rem 0.4rem;font-size:0.72rem;">corporatechallengelive26</code></p>
+      <div class="sec-title">10 Days. Let’s Finish Strong.</div>
+      <p>The countdown is real — <span class="inline-accent">10 days</span> stand between us and the finish line on <span class="inline-accent">June 26</span>. Team E-gineering has shown up all season long, and now it’s time for the final sprint. Every mile logged, every dollar donated, every volunteer shift — it all goes toward our team score.</p>
+      <p>This is the home stretch where it counts the most. Chip in to <strong>Swim IN Safety</strong>, get moving for the <strong>Movement Challenge</strong>, and if you haven’t volunteered yet — the <strong>Saturday event</strong> is calling your name. <strong>This team runs on all of us. Let’s leave it all on the field! 🚀</strong></p>
     </div>
     <div>
       <div class="code-blurb">
         <span class="comment">// challenge_overview.json</span><br>
         {<br>
         &nbsp;&nbsp;<span class="key">"event_day"</span>: <span class="val">"2026-06-26"</span>,<br>
-        &nbsp;&nbsp;<span class="key">"total_challenges"</span>: <span class="val">4</span>,<br>
-        &nbsp;&nbsp;<span class="key">"team_status"</span>: <span class="val">"enrolled"</span>,<br>
-        &nbsp;&nbsp;<span class="fn">run</span>(<span class="val">"getChallenges"</span>)<br>
+        &nbsp;&nbsp;<span class="key">"total_challenges"</span>: <span class="val">5</span>,<br>
+        &nbsp;&nbsp;<span class="key">"team_status"</span>: <span class="val">"FINAL_PUSH"</span>,<br>
+        &nbsp;&nbsp;<span class="fn">run</span>(<span class="val">"finishStrong"</span>)<br>
         }
       </div>
     </div>
@@ -143,7 +141,7 @@ p:last-child { margin-bottom:0; }
         <div class="progress-label"><span>DONORS</span><span id="nl-bd-fraction">8 / 33</span></div>
         <div class="progress-track"><div class="progress-fill red" id="nl-bd-bar" style="width:24%"></div></div>
       </div>
-      <p>The Blood Drive is officially in the books — and our team showed up! <strong>8 donors</strong> from Team E-gineering came through on April 29, which means we collectively helped save <strong class="inline-accent">24 lives</strong>. That's not a small number — that's real impact. A huge thank you to everyone who rolled up their sleeve and executed. You're the reason we do this! 🙌</p>
+      <p>The Blood Drive is officially in the books — and our team showed up! <strong>8 donors</strong> from Team E-gineering came through on April 29, which means we collectively helped save <strong class="inline-accent">24 lives</strong>. That’s not a small number — that’s real impact. A huge thank you to everyone who rolled up their sleeve and executed. You’re the reason we do this! 🙌</p>
       <div class="code-blurb">
         <span class="fn">driveResult</span>(<br>
         &nbsp;&nbsp;<span class="key">donors</span>: <span class="val">8</span>,<br>
@@ -151,7 +149,7 @@ p:last-child { margin-bottom:0; }
         &nbsp;&nbsp;<span class="key">status</span>: <span class="val">"COMPLETE ✓"</span><br>
         );
       </div>
-      <p style="font-size:0.78rem;">Want to keep the momentum going? You can still donate at any <strong>Versiti Blood Center</strong> — just let them know you're donating for <strong>ISC for E-gineering, Inc.</strong> Every drop still counts!</p>
+      <p style="font-size:0.78rem;">You can still donate independently at any <strong>Versiti Blood Center</strong> through <span class="inline-accent">June 19</span> — just let them know you’re donating for <strong>ISC for E-gineering, Inc.</strong> Every drop still counts! ❤️</p>
     </div>
 
     <div class="col">
@@ -160,11 +158,11 @@ p:last-child { margin-bottom:0; }
       <span class="badge badge-yellow">NEEDS_MERGE</span>
       <div class="progress-wrap">
         <div class="progress-label"><span>VOLUNTEERS</span><span id="nl-vol-fraction">3 / 5</span></div>
-        <div class="progress-track"><div class="progress-fill red" id="nl-vol-bar" style="width:60%"></div></div>
+        <div class="progress-track"><div class="progress-fill yellow" id="nl-vol-bar" style="width:60%"></div></div>
       </div>
-      <p>We have <span class="inline-accent" id="nl-vol-current-inline">3 of 5</span> volunteers committed — so close! We need just <strong id="nl-vol-needed">2 more contributors</strong> to close this out. Deadline to sign up is <span class="inline-accent">June 27</span>.</p>
+      <p>We have <span class="inline-accent" id="nl-vol-current-inline">3 of 5</span> volunteers committed — so close! We’re just <strong id="nl-vol-needed">2 spots away</strong> from maxing this out. We would <em>love</em> for you to join us at the <strong>Saturday Corporate Challenge</strong> — sign up and make it happen! Deadline is <span class="inline-accent">June 27</span>.</p>
       <div class="volunteer-track" id="nl-vol-dots"></div>
-      <p style="font-size:0.78rem;">No volunteer profile yet? Start by creating one below. Already have a profile? Sign up directly to volunteer at the <strong>Saturday Corporate Challenge event</strong> — a great way to spend a Saturday giving back to the community!</p>
+      <p style="font-size:0.78rem;">No volunteer profile yet? Create one below first. Already have one? Jump straight into signing up to volunteer at the <strong>Saturday Corporate Challenge event</strong> — it’s a great time, a great cause, and a great team to do it with! 🙌</p>
       <a id="nl-btn-volunteer" href="https://indianasportscorp.volunteerlocal.com/volunteer/" class="nl-btn" style="background:var(--nl-header-bg,#304C5F);margin-top:0.4rem;display:inline-block;">→ CREATE VOLUNTEER PROFILE</a>
       <a href="https://indianasportscorp.volunteerlocal.com/volunteer/?id=113196" class="nl-btn" style="background:var(--nl-accent,#F5653D);margin-top:0.4rem;display:inline-block;">→ VOLUNTEER AT CORPORATE CHALLENGE</a>
     </div>
@@ -172,38 +170,21 @@ p:last-child { margin-bottom:0; }
     <div class="col">
       <div class="sec-label">CHALLENGE_03</div>
       <div class="sec-title">Virtual Challenges</div>
-      <span class="badge badge-red">IN_PROGRESS</span>
+      <span class="badge badge-blue">COMPLETE ✓</span>
       <div class="progress-wrap">
-        <div class="progress-label"><span>STATUS</span><span>ACTIVE</span></div>
-        <div class="progress-track"><div class="progress-fill red" style="width:50%"></div></div>
+        <div class="progress-label"><span>PARTICIPATION</span><span>MAX POINTS EARNED</span></div>
+        <div class="progress-track"><div class="progress-fill red" style="width:100%"></div></div>
       </div>
-      <p>Virtual Challenges are <strong>in full swing!</strong> Sessions are happening now through June — and calendar invites have been sent to help you register. Don't let these slip through!</p>
-      <table class="events-list" style="margin-top:0.5rem;">
-        <tr>
-          <td class="date-cell">MAY 26</td>
-          <td><strong style="font-size:0.75rem;">Virtual Yoga – 12 PM</strong><br><span style="color:#7a96a8;font-size:0.68rem;">Hosted by Purvi Lippincott</span><br><a href="https://click.comm.indianasportscorp.org/?qs=ABB7InYiOjEsImQiOjQ4NzV9AAEAAAAAAFuYkBE0_XCYVpinTYDUW3TXCkvfMDeJRe7BdLHR1vIkINA-oe2ONXyjNOunwvBJSgtWWcSPWbV--G5qr-ZksKFV5QNcabecLJmM" style="color:#F5653D;font-size:0.68rem;font-family:'Space Mono',monospace;">→ Register</a></td>
-        </tr>
-        <tr>
-          <td class="date-cell">MAY 28</td>
-          <td><strong style="font-size:0.75rem;">Health &amp; Wellness – 12 PM</strong><br><span style="color:#7a96a8;font-size:0.68rem;">Franciscan Health · Workplace Wellness</span><br><a href="https://click.comm.indianasportscorp.org/?qs=ABB7InYiOjEsImQiOjQ4NzV9AAEAAAAAAFuYkBE1PwVuX6CVUoweGo1KVmsfeqDnJVWIsSQN2ymZhKq1IumKwlEgpbwT1Kag3w12fXlrQ0KidlVVxh_ljQbpH-_EocgqD2ja" style="color:#F5653D;font-size:0.68rem;font-family:'Space Mono',monospace;">→ Register</a></td>
-        </tr>
-        <tr>
-          <td class="date-cell">JUN 02</td>
-          <td><strong style="font-size:0.75rem;">Virtual Yoga – 12 PM</strong><br><span style="color:#7a96a8;font-size:0.68rem;">Hosted by Purvi Lippincott</span><br><a href="https://click.comm.indianasportscorp.org/?qs=ABB7InYiOjEsImQiOjQ4NzV9AAEAAAAAAFuYkBE24GNQsZ_-13t_fXhyUzCA6L18FkkkhKOr3JsWvaHroRFFrLaw86s1PYgJ3Aa5sDRiY-Q7RtPtVi__GY8FiLB_ifjzPpmI" style="color:#F5653D;font-size:0.68rem;font-family:'Space Mono',monospace;">→ Register</a></td>
-        </tr>
-        <tr>
-          <td class="date-cell">JUN 04</td>
-          <td><strong style="font-size:0.75rem;">Health &amp; Wellness – 12 PM</strong><br><span style="color:#7a96a8;font-size:0.68rem;">Franciscan Health · Ageless Athlete</span><br><a href="https://click.comm.indianasportscorp.org/?qs=ABB7InYiOjEsImQiOjQ4NzV9AAEAAAAAAFuYkBE3TQhjjKEWwlmr3r3_A-9X5aCjfjFSetwB_foCR8ABPxZE36VMk5U2HMlvbDH5TENz5x0GVOD2KCu5K_n_hGgyxS5bsEyW" style="color:#F5653D;font-size:0.68rem;font-family:'Space Mono',monospace;">→ Register</a></td>
-        </tr>
-        <tr>
-          <td class="date-cell">JUN 09</td>
-          <td><strong style="font-size:0.75rem;">Virtual Yoga – 12 PM</strong><br><span style="color:#7a96a8;font-size:0.68rem;">Hosted by Purvi Lippincott</span><br><a href="https://click.comm.indianasportscorp.org/?qs=ABB7InYiOjEsImQiOjQ4NzV9AAEAAAAAAFuYkBE46hk4DZNKiMAQ8i7cuyqHaHcwhiwSDntnnjkmFToVuxg3zKlcpY49UzNzYkMa5a6uIBB_nMs17sj6pJkmxGTXG5NAtrXL" style="color:#F5653D;font-size:0.68rem;font-family:'Space Mono',monospace;">→ Register</a></td>
-        </tr>
-        <tr>
-          <td class="date-cell">JUN 11</td>
-          <td><strong style="font-size:0.75rem;">Health &amp; Wellness – 12 PM</strong><br><span style="color:#7a96a8;font-size:0.68rem;">Franciscan Health · Workplace Nutrition</span><br><a href="https://click.comm.indianasportscorp.org/?qs=ABB7InYiOjEsImQiOjQ4NzV9AAEAAAAAAFuYkBE59-0WAMMFMd-rCJTfWN0-s0rFBw-1deFAfeU_g1KXU1sde6v4klAmXMliejseDR1nY02BBE9uOrfpve99cEEbiLyoQLi-" style="color:#F5653D;font-size:0.68rem;font-family:'Space Mono',monospace;">→ Register</a></td>
-        </tr>
-      </table>
+      <p>🎉 <strong>MISSION ACCOMPLISHED!</strong> The Virtual Challenge series is officially in the books — and Team E-gineering absolutely delivered. From yoga sessions to wellness webinars, you showed up every single time.</p>
+      <p>A heartfelt <span class="inline-accent">THANK YOU</span> to everyone who participated. You earned <strong>maximum participation points</strong> for the team — that’s a full-stack win. We couldn’t be more proud of this group! 🌟</p>
+      <div class="code-blurb">
+        <span class="comment">// virtual_challenge.result</span><br>
+        {<br>
+        &nbsp;&nbsp;<span class="key">status</span>: <span class="val">"COMPLETE ✓"</span>,<br>
+        &nbsp;&nbsp;<span class="key">points</span>: <span class="val">MAX</span>,<br>
+        &nbsp;&nbsp;<span class="key">participation</span>: <span class="val">"100%"</span><br>
+        }
+      </div>
     </div>
 
     <div class="divider-row"></div>
@@ -212,11 +193,11 @@ p:last-child { margin-bottom:0; }
       <div class="sec-label">CHALLENGE_04</div>
       <div class="sec-title">Swim IN Safety – Donations</div>
       <span class="badge badge-red">IN_PROGRESS</span>
-      <p><strong>Make Waves With Us!</strong> Join the <strong>Swim IN Safety Fundraiser</strong> — <em>"Swimming is the only sport that can save your life."</em></p>
-      <p>This is a community-driven initiative focused on expanding access to water safety education for Hoosiers across the state. Drowning is the leading cause of accidental death in children, and it is largely preventable. Your donation helps ensure every child and family in Indiana has access to the lifesaving skills they deserve.</p>
+      <p><strong>Finish Strong! 🌊</strong> We’re making real waves for <strong>Swim IN Safety</strong> — and with <span class="inline-accent">10 days left</span>, now is the time to push toward the finish line. We’re at <span class="inline-accent">30%</span> of our goal and every dollar brings us closer. <em>A little goes a long way!</em></p>
+      <p>This community-driven initiative expands access to water safety education for Hoosiers across the state. Drowning is the leading cause of accidental death in children, and it is largely preventable. Your donation helps ensure every child and family in Indiana has access to the lifesaving skills they deserve. Don’t wait — donate today! 💙</p>
       <div class="progress-wrap" style="max-width:400px">
-        <div class="progress-label"><span>FUNDRAISING TOTAL</span><span>$160 / $750</span></div>
-        <div class="progress-track"><div class="progress-fill red" style="width:21%"></div></div>
+        <div class="progress-label"><span>FUNDRAISING TOTAL</span><span>$225 / $750</span></div>
+        <div class="progress-track"><div class="progress-fill red" style="width:30%"></div></div>
       </div>
       <a href="https://give.indianasportscorp.org/team/826223" class="nl-btn" style="background:var(--nl-steel,#507C9B);margin-top:0.5rem;display:inline-block;">→ DONATE NOW</a>
     </div>
@@ -224,12 +205,12 @@ p:last-child { margin-bottom:0; }
     <div class="one-col" style="border-top:1.5px solid var(--nl-rule,#B7CCDC);border-left:1.5px solid var(--nl-rule,#B7CCDC);">
       <div class="sec-label">CHALLENGE_05</div>
       <div class="sec-title">Movement Challenge</div>
-      <span class="badge badge-gray">STARTS JUNE 15</span>
-      <div class="stat-box">
-        <div class="stat-num">11</div>
-        <div class="stat-label">days to log activity<br>before event day</div>
+      <span class="badge badge-red">IN_PROGRESS</span>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>MILES LOGGED</span><span>127 / 1,000</span></div>
+        <div class="progress-track"><div class="progress-fill red" style="width:12.7%"></div></div>
       </div>
-      <p style="font-size:0.75rem;">Opens <span class="inline-mono">June 15</span> — just 11 days before the big event. Log steps, miles, workouts. Treat it as a pre-release stress test for your body.</p>
+      <p style="font-size:0.75rem;">👟 <strong>Let’s GO, Team!</strong> The Movement Challenge is officially live and we’ve got <span class="inline-accent">127 miles</span> on the board — but we need <strong>1,000</strong> to max out. Walk it, run it, bike it, swim it — every single mile counts! Lace up and log those steps. We’ve got <strong>10 days</strong> to make it happen. 🏃‍♀️🚴‍♂️🌟</p>
     </div>
 
     <div class="divider-row"></div>
@@ -238,15 +219,16 @@ p:last-child { margin-bottom:0; }
       <div class="sec-label">KEY_DATES.log</div>
       <div class="sec-title">Events in the Queue</div>
       <table class="events-list">
-        <tr><td class="date-cell" id="nl-d-blood-tbl" style="color:#7a96a8;text-decoration:line-through;">APR 29</td><td class="event-name" style="color:#7a96a8;">Blood Drive</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
-        <tr><td class="date-cell" id="nl-d-swimin-tbl">MAY 01</td><td class="event-name">Swim IN Safety Donations Open</td><td class="event-type">IN_PROGRESS</td></tr>
-        <tr><td class="date-cell" style="color:#F5653D;font-weight:700;">MAY 26</td><td class="event-name"><strong>Virtual Yoga – 12 PM</strong> (Purvi Lippincott)</td><td class="event-type" style="color:#F5653D;font-weight:700;">TODAY</td></tr>
-        <tr><td class="date-cell">MAY 28</td><td class="event-name">Health &amp; Wellness Webinar – 12 PM · Workplace Wellness</td><td class="event-type">VIRTUAL</td></tr>
-        <tr><td class="date-cell">JUN 02</td><td class="event-name">Virtual Yoga – 12 PM (Purvi Lippincott)</td><td class="event-type">VIRTUAL</td></tr>
-        <tr><td class="date-cell">JUN 04</td><td class="event-name">Health &amp; Wellness Webinar – 12 PM · Ageless Athlete</td><td class="event-type">VIRTUAL</td></tr>
-        <tr><td class="date-cell">JUN 09</td><td class="event-name">Virtual Yoga – 12 PM (Purvi Lippincott)</td><td class="event-type">VIRTUAL</td></tr>
-        <tr><td class="date-cell">JUN 11</td><td class="event-name">Health &amp; Wellness Webinar – 12 PM · Workplace Nutrition</td><td class="event-type">VIRTUAL</td></tr>
-        <tr><td class="date-cell" id="nl-d-movement-tbl">JUN 15</td><td class="event-name">Movement Challenge Opens</td><td class="event-type">LAUNCH</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">APR 29</td><td class="event-name" style="color:#7a96a8;">Blood Drive</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;">MAY 01</td><td class="event-name" style="color:#7a96a8;">Swim IN Safety Donations Open</td><td class="event-type" style="color:#507C9B;">IN_PROGRESS</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">MAY 26</td><td class="event-name" style="color:#7a96a8;">Virtual Yoga – 12 PM (Purvi Lippincott)</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">MAY 28</td><td class="event-name" style="color:#7a96a8;">Health &amp; Wellness Webinar – 12 PM · Workplace Wellness</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">JUN 02</td><td class="event-name" style="color:#7a96a8;">Virtual Yoga – 12 PM (Purvi Lippincott)</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">JUN 04</td><td class="event-name" style="color:#7a96a8;">Health &amp; Wellness Webinar – 12 PM · Ageless Athlete</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">JUN 09</td><td class="event-name" style="color:#7a96a8;">Virtual Yoga – 12 PM (Purvi Lippincott)</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">JUN 11</td><td class="event-name" style="color:#7a96a8;">Health &amp; Wellness Webinar – 12 PM · Workplace Nutrition</td><td class="event-type" style="color:#507C9B;">COMPLETE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#7a96a8;text-decoration:line-through;">JUN 15</td><td class="event-name" style="color:#7a96a8;">Movement Challenge Opens</td><td class="event-type" style="color:#507C9B;">ACTIVE ✓</td></tr>
+        <tr><td class="date-cell" style="color:#F5653D;font-weight:700;">JUN 19</td><td class="event-name"><strong>Last Day to Donate Blood (Versiti)</strong></td><td class="event-type" style="color:#F5653D;font-weight:700;">DEADLINE</td></tr>
         <tr><td class="date-cell" id="nl-d-cycling-tbl">JUN 25</td><td class="event-name">🚴 Cycling Time Trial &amp; 🏓 Pickleball Tournament</td><td class="event-type">EVENT</td></tr>
         <tr><td class="date-cell" id="nl-d-eventday-tbl">JUN 26</td><td class="event-name">🏁 EVENT DAY</td><td class="event-type" style="color:var(--nl-accent,#F5653D);font-weight:700;">GO_LIVE</td></tr>
         <tr><td class="date-cell" id="nl-d-voldeadline-tbl">JUN 27</td><td class="event-name">Volunteer Sign-Up Deadline</td><td class="event-type">DEADLINE</td></tr>
@@ -256,8 +238,8 @@ p:last-child { margin-bottom:0; }
   </div>
 
   <div class="footer">
-    <span id="nl-footer-left">E-gineering, Inc. Press &nbsp;·&nbsp; Corporate Challenge Dispatch &nbsp;·&nbsp; Issue 02</span>
-    <span class="footer-right" id="nl-footer-right">NEXT_ISSUE: JUN 2026 &nbsp;→</span>
+    <span id="nl-footer-left">E-gineering, Inc. Press &nbsp;·&nbsp; Corporate Challenge Dispatch &nbsp;·&nbsp; Issue 03</span>
+    <span class="footer-right" id="nl-footer-right">FINAL ISSUE &nbsp;·&nbsp; EVENT DAY: JUN 26 🏁</span>
   </div>
 
 </div><!-- .page -->
